@@ -5,8 +5,8 @@ class productosDeBelleza { //CREO UN OBJETO USANDO CLASES
         this.modoDeUso=modoDeUso;
         this.precio=precio;
     }
-    mostrarProductos(){ // CREO UN METODO de la clase productosDeBelleza/Es una funcion asociada a la clase productosDeBelleza 
-        return "nombre: "+this.nombre +" " +"marca: "+this.marca +" " +"modoDeUso: "+this.modoDeUso+" " +"precio: "+this.precio;
+    mostrarProductos(){ // CREO UN METODO de la clase productosDeBelleza/Es una FUNCION asociada a la clase productosDeBelleza 
+        return "Nombre del producto: "+this.nombre +" " +"Marca: "+this.marca +" " +"Modo de Uso: "+this.modoDeUso+" " +"Precio: "+this.precio;
     }
 };
 
@@ -18,58 +18,8 @@ let producto3 = new productosDeBelleza("Contorno de Ojos.Eye Cream.","Carpe Diem
 
 let lista_productos = [producto1, producto2, producto3];
 
-/*console.log(producto1.mostrarProductos)
-console.log(producto2.mostrarProductos)
-console.log(producto3.mostrarProductos)
+console.log(producto1.mostrarProductos());
+console.log(producto2.mostrarProductos());
+console.log(producto3.mostrarProductos());
 
-/*
-let productos = document.querySelector("#Productos");
-let contenedor = document.querySelector("#Contenedor");
 
-let botonAgregar = document.querySelector("#Agregar");
-let botonQuitar = document.querySelector("#Quitar");
-
-let referencia = productos.cloneNode(true);
-
-productos.remove();
-
-function AgregarArticulo() {
-    fetch("https://2006dll.github.io/codoacodo24264mio/datos.json")     // API - Application Programming Interface 
-    .then(response => response.json())                                  // Consumiendo una API    https://username.github.io/reponame/file.json
-    .then(data => {
-        // Procesamiento de la info que llega de la API
-    
-        console.log(data.results[0].nombre.results + " " + data.results[0].marca.results + " " +data.results[0].mododeuso.results + " "+ data.results[0].precio.results + " " )
-        console.log(data.results[1].nombre.results + " " + data.results[1].marca.results + " " +data.results[1].mododeuso.results + " "+ data.results[1].precio.results + " " )
-        console.log(data.results[2].nombre.results + " " + data.results[2].marca.results + " " +data.results[2].mododeuso.results + " "+ data.results[2].precio.results + " " )
-       
-    
-        let nuevoProducto = referencia.cloneNode(true);
-    
-        
-        nuevoProducto.querySelector("p").innerHTML = data.results[0].nombre.results + " " + data.results[0].marca.results + " " +data.results[0].mododeuso.results + " "+ data.results[0].precio.results + " "
-        nuevoProducto.querySelector("p").innerHTML = data.results[1].nombre.results + " " + data.results[1].marca.results + " " +data.results[1].mododeuso.results + " "+ data.results[1].precio.results + " "
-        nuevoProducto.querySelector("p").innerHTML = data.results[2].nombre.results + " " + data.results[2].marca.results + " " +data.results[2].mododeuso.results + " "+ data.results[2].precio.results + " "
-        contenedor.appendChild(nuevoProducto);
-        })
-    .catch(error => console.log("Ocurrió un error! " + error));
-}                                                                    
-                                                                        
-    
-
-function QuitarArticulo() {
-    if(contenedor.childElementCount > 0){
-        contenedor.removeChild(contenedor.lastChild);
-    }
-}
-
-// Eventos
-botonAgregar.addEventListener("click", function(){
-    AgregarArticulo();
-});
-
-botonQuitar.addEventListener("click", function(){
-    QuitarArticulo();
-});
-
-*/

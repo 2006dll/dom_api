@@ -23,3 +23,11 @@ console.log(producto2.mostrarProductos());
 console.log(producto3.mostrarProductos());
 
 
+
+fetch("https://2006dll.github.io/dom_api/datos.json")     // API - Application Programming Interface 
+    .then(response => response.json())                    // Consumiendo una API    https://username.github.io/reponame/file.json
+    .then(data => {
+        // Procesamiento de la info que llega de la API
+        console.log(data);
+        })
+    .catch(error => console.log("Ocurrió un error! " + error));

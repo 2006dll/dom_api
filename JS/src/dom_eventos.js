@@ -1,6 +1,6 @@
-let productos= document.getElementById("Productos");
+let productos= document.getElementById("Productos");   /* o usar: document.queryselector("#Productos");*/
 let plantilla= document.queryselector(".plantillaProductos");
-let contenedor= document.getElementById("ContenedorProductos");
+let contenedor= document.getElementById("ContenedorProductos");  /* o usar: document.queryselector("#ContenedorProductos");*/
 
 console.log(productos);
 console.log(contenedor);
